@@ -3,13 +3,13 @@ import Image from "next/image";
 
 import { Dialog, Transition } from "@headlessui/react";
 
-import { carProps } from "@/types";
+import { CarProps } from "@/types";
 import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
-  car: carProps;
+  car: CarProps;
 }
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
